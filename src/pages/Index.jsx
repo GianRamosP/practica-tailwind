@@ -2,6 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import { items } from "../data/items";
 import backgroundImg from "../assets/background.jpg";
+import Services from "../components/Services";
 
 export default function Index() {
   return (
@@ -33,6 +34,9 @@ export default function Index() {
           <img src={backgroundImg} alt="Imagen de fondo" />
         </div>
       </main>
+      <section>
+        <Services />
+      </section>
     </>
   );
 }
