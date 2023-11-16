@@ -2,6 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import { items } from "../data/items";
 import backgroundImg from "../assets/background.jpg";
+
 import WhyUs from "./WhyUs";
 
 export default function Index() {
