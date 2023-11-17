@@ -4,10 +4,13 @@ import { items } from "../data/items";
 import backgroundImg from "../assets/background.jpg";
 
 import WhyUs from "./WhyUs";
+import Footer from "../components/Footer";
+import Services from "../components/Services";
+import Listing from "../components/Listing";
 
 export default function Index() {
   return (
-    <>
+    <div className="relative">
       <Header />
       <main className="flex flex-row justify-between">
         <div className="mt-[120px] w-[30%]">
@@ -17,7 +20,7 @@ export default function Index() {
           <p className="font-light w-[445px] mt-[25px] text-text">
             Descubre la elegancia en cada detalle.
           </p>
-          <button className="bg-textButton w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold">
+          <button className="bg-textButton w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold border-2 border-textButton hover:bg-white hover:text-textButton transition duration-500">
             Reserve aquí
           </button>
           {/* <div>
@@ -35,48 +38,13 @@ export default function Index() {
           <img src={backgroundImg} alt="Imagen de fondo" />
         </div>
       </main>
-      <section>
-          <WhyUs/>
+      <section className="my-[110px]">
+        <Services />
       </section>
-      
-      <footer className="bg-blue-500 text-white p-5 w-full">
-  <div className="mx-auto">
-    <div className="flex flex-wrap justify-between">
-      <div className="w-full md:w-1/4 p-5">
-        <h4 className="mb-4">Contacto</h4>
-        <ul>
-          <li><a>Dirección: Calle Principal, Ciudad</a></li>
-          <li><a>Teléfono: (123) 456-7890</a></li>
-          <li><a href="#">Email: info@hotelzariman.com</a></li>
-        </ul>
-      </div>
-      <div className="w-full md:w-1/4 p-5">
-        <h4 className="mb-4">Enlaces Rapidos</h4>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Habitaciones</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Reservas</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </div>
-      <div className="w-full md:w-1/4 p-5">
-        <h4 className="mb-4">Redes Sociales</h4>
-        <ul>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Instagram</a></li>
-        </ul>
-      </div>
-      
+      <section>
+        <Listing />
+      </section>
+      <Footer />
     </div>
-    <div className="mt-5 text-center">
-      <p>© 2023 Tu Hotel. Todos los derechos reservados.</p>
-    </div>
-  </div>
-  
-</footer>
-
-    </>
   );
 }

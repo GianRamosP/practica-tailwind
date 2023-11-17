@@ -16,20 +16,20 @@ export default function Header() {
 
       <nav className="justify-between m-[56px]">
         <ul className="w-[545px] h-[23px] flex flex-row justify-between text-[18px] font-regular text-selected">
-          <li className="">
-            <Link to="/">Home</Link>
+          <li className="hover:font-bold">
+            <Link to="/">Inicio</Link>
           </li>
-          <li className="">
-            <Link to="/prices">Prices</Link>
+          <li className="hover:font-bold">
+            <Link to="/prices">Precios</Link>
           </li>
-          <li className="">
-            <Link to="/contact">Contact</Link>
+          <li className="hover:font-bold">
+            <Link to="/contact">Contactos</Link>
           </li>
-          <li className="">
-            <Link to="/about">About</Link>
+          <li className="hover:font-bold">
+            <Link to="/about">Acerca</Link>
           </li>
-          <li className="">
-            <Link to="/whyus">Why Us</Link>
+          <li className="hover:font-bold">
+            <Link to="/whyus">Nosotros</Link>
           </li>
         </ul>
       </nav>
