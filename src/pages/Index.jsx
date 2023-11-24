@@ -7,6 +7,7 @@ import WhyUs from "./WhyUs";
 import Footer from "../components/Footer";
 import Services from "../components/Services";
 import Listing from "../components/Listing";
+import ButtonBlue from "../components/buttons/ButtonBlue";
 
 export default function Index() {
   return (
@@ -20,9 +21,8 @@ export default function Index() {
           <p className="font-light w-[445px] mt-[25px] text-text">
             Descubre la elegancia en cada detalle.
           </p>
-          <button className="bg-textButton w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold border-2 border-textButton hover:bg-white hover:text-textButton transition duration-500">
-            Reserve aquí
-          </button>
+          <ButtonBlue texto="Reserve aquí" />
+
           {/* <div>
             <div>
               {items.map((item) => (

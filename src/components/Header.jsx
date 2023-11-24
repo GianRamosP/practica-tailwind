@@ -10,7 +10,7 @@ export default function Header() {
           </p>
         </div>
         <p className="text-[24px] text-logoP tracking-[0px] w-[107px] font-mulish font-bold">
-          Hotel
+          Casa andina
         </p>
       </div>
 

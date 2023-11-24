@@ -17,6 +17,7 @@ export default {
         textButton: "#458FF6",
         logo: "#5B9BF3",
         logoP: "#233348",
+        colorButtonRed: "#f87171",
       },
     },
   },

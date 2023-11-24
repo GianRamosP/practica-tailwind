@@ -1,3 +1,21 @@
+/* index.css */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .custom-table {
+    @apply table-auto border border-gray-400;
+    border-collapse: collapse;
+    text-align: center; /* Alineación de texto al centro */
+  }
+
+  .custom-table th {
+    @apply px-4 py-2 border border-gray-400;
+  }
+
+  .custom-table td {
+    @apply px-4 py-2 border border-gray-400;
+  }
+}

@@ -13,6 +13,7 @@ import Prices from "./pages/Prices";
 import Services from "./pages/Services";
 import WhyUs from "./pages/WhyUs";
 import Error from "./components/Error";
+import Admin from "./pages/admin/Admin";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/services",
     element: <Services />,
+  },
+  {
+    path: "/admin",
+    element: <Admin />,
   },
 ]);
 

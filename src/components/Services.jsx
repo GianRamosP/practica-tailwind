@@ -2,6 +2,7 @@ import ServicesItems from "./items/ServicesItems";
 import bgFrame from "../assets/bg/Frame.png";
 import Line from "./Line";
 import ButtonWhite from "./buttons/ButtonWhite";
+import IconSearch from "../assets/icons/icon_search.png";
 
 export default function Services() {
   return (
@@ -20,8 +21,8 @@ export default function Services() {
         your health
       </p>
       <div className="grid grid-cols-3 w-[1120px] gap-x-4 gap-y-6 mt-[50px]">
-        <ServicesItems />
-        <ServicesItems />
+        <ServicesItems img={IconSearch} subtile="Testing" p="Hola" />
+        <ServicesItems img={IconSearch} subtile="Testing2" p="Prueba2" />
         <ServicesItems />
         <ServicesItems />
         <ServicesItems />
