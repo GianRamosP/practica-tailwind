@@ -13,6 +13,12 @@ import Prices from "./pages/Prices";
 import Services from "./pages/Services";
 import WhyUs from "./pages/WhyUs";
 import Error from "./components/Error";
+import GeneralManagement from "./pages/GeneralManagement";
+import Login from "./pages/Login";
+import HotelManagement from "./pages/HotelManagement";
+import Signup from "./pages/Signup";
+import AdministrarDuenos from "./pages/admin_users_hotels";
+
 
 const router = createBrowserRouter([
   {
@@ -58,6 +64,27 @@ const router = createBrowserRouter([
     path: "/services",
     element: <Services />,
   },
+  {
+    path: "/general-management",
+    element: <GeneralManagement />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/hotel-management",
+    element: <HotelManagement />,
+  },
+  {
+    path: "/signup",
+    element: <Signup />,
+  },
+  {
+    path: "/admin_users_hotels",
+    element: <AdministrarDuenos />,
+  },
+  
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
