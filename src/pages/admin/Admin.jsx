@@ -1,121 +1,62 @@
-import React from "react";
+import React, { Component } from "react";
+import axios from "axios";
 import Header from "../../components/Header";
-import ButtonEdit from "../../components/buttons/ButtonEdit";
-import ButtonDelete from "../../components/buttons/ButtonDelete";
-import ButtonBlue from "../../components/buttons/ButtonBlue";
+import ManagerList from "../../components/table/ManagerList";
+import Loader from "../../components/Loader";
 
-export default function Admin() {
-  return (
-    <>
-      <Header />
-      <h2 className="font-bold text-[28px]">
-        Listado de Propietarios de hoteles
-      </h2>
-      <ButtonBlue text="Agregar gestor" />
-      <div className="mt-[33px]">
-        <table className="custom-table w-full">
-          <thead>
-            <tr>
-              <th>N°</th>
-              <th>Hotel</th>
-              <th>Nombre</th>
-              <th>Teléfono</th>
-              <th>Fecha de renovación</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Hotel 1</td>
-              <td>Juan</td>
-              <td>987654321</td>
-              <td>12/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Hotel 2</td>
-              <td>Orlando</td>
-              <td>987654321</td>
-              <td>21/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Hotel 3</td>
-              <td>Juan</td>
-              <td>987654321</td>
-              <td>12/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Hotel 4</td>
-              <td>Orlando</td>
-              <td>987654321</td>
-              <td>21/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Hotel 5</td>
-              <td>Juan</td>
-              <td>987654321</td>
-              <td>12/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Hotel 6</td>
-              <td>Orlando</td>
-              <td>987654321</td>
-              <td>21/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Hotel 7</td>
-              <td>Juan</td>
-              <td>987654321</td>
-              <td>12/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Hotel 8</td>
-              <td>Orlando</td>
-              <td>987654321</td>
-              <td>21/02/24</td>
-              <td>
-                <ButtonEdit />
-                <ButtonDelete />
-              </td>
-            </tr>
-          </tbody>
-        </table>
+class Admin extends Component {
+  state = {
+    managers: [],
+    loader: false,
+    url: "http://localhost/laravel-rest-api/public/api/managers",
+  };
+
+  getManagers = async () => {
+    this.setState({ loader: true });
+    const managers = await axios.get(this.state.url);
+    this.setState({ managers: managers.data, loader: false });
+  };
+
+  deleteManager = async (id) => {
+    this.setState({ loader: true });
+    await axios.delete(`${this.state.url}/${id}`);
+
+    this.getManagers();
+  };
+
+  componentDidMount() {
+    this.getManagers();
+  }
+
+  onDelete = (id) => {
+    this.deleteManager(id);
+  };
+
+  render() {
+    return (
+      <div>
+        <Header />
+        <h1 className="text-[36px] font-bold">
+          Administración de encargados de hoteles
+        </h1>
+        <div>
+          <label htmlFor="id_manager">ID</label>
+          <input
+            type="text"
+            name="id_manager"
+            placeholder="Ingrese id que quiere buscar"
+          />
+        </div>
+        <div>
+          <button>Guardar</button>
+        </div>
+        {/* TO DO: Agregar un pequeño Loader para las columnas y tablas */}
+        {this.state.loader ? <Loader /> : ""}
+        {/* Cambio de Loader a loader */}
+        <ManagerList managers={this.state.managers} onDelete={this.onDelete} />
       </div>
-    </>
-  );
+    );
+  }
 }
+
+export default Admin;

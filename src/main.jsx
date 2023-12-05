@@ -14,6 +14,7 @@ import Services from "./pages/Services";
 import WhyUs from "./pages/WhyUs";
 import Error from "./components/Error";
 import Admin from "./pages/admin/Admin";
+import GestoresComponent from "./components/GestoresComponent";
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
   {
     path: "/admin",
     element: <Admin />,
+  },
+  {
+    path: "/admin/gestores",
+    element: <GestoresComponent />, // Aquí debes agregar el componente de gestores que corresponda
   },
 ]);
 
