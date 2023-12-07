@@ -8,6 +8,11 @@ class ManagerList extends Component {
     this.props.onDelete(id);
   };
 
+  onEdit = (data) => {
+    // console.log("list", data);
+    this.props.onEdit(data);
+  };
+
   render() {
     const { managers } = this.props;
 
@@ -16,7 +21,7 @@ class ManagerList extends Component {
         <h2 className="font-bold text-[28px]">
           Listado de Propietarios de hoteles
         </h2>
-        <ButtonBlue text="Agregar gestor" />
+
         <div className="mt-[33px]">
           <table className="custom-table w-full">
             <thead>
@@ -36,6 +41,7 @@ class ManagerList extends Component {
                   manager={manager}
                   key={manager.id_manager}
                   onDelete={this.onDelete}
+                  onEdit={this.onEdit}
                 />
               ))}
             </tbody>

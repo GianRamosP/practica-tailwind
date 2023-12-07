@@ -8,6 +8,10 @@ class Manager extends Component {
     this.props.onDelete(this.props.manager.id_manager);
   };
 
+  onEdit = () => {
+    this.props.onEdit(this.props.manager);
+  };
+
   render() {
     const {
       id_manager,
@@ -27,7 +31,7 @@ class Manager extends Component {
         <td>{fecha_renovacion}</td>
         <td>{email}</td>
         <td>
-          <ButtonEdit />
+          <ButtonEdit onClick={this.onEdit} />
           <ButtonDelete onClick={this.onDelete} />
         </td>
       </tr>

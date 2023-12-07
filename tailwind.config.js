@@ -18,6 +18,7 @@ export default {
         logo: "#5B9BF3",
         logoP: "#233348",
         colorButtonRed: "#f87171",
+        btnEdit: "#f72c",
       },
     },
   },
