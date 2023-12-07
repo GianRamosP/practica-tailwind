@@ -45,7 +45,7 @@ class Admin extends Component {
     //Limpiar managers
     this.setState({ manager: {}, loader: true });
 
-    await axios.put(`${this.state.url}/${data.id}`, {
+    await axios.put(`${this.state.url}/${data.id_manager}`, {
       nombre_hotel: data.nombre_hotel,
       nombre_persona: data.nombre_persona,
       telefono: data.telefono,

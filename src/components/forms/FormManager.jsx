@@ -26,7 +26,7 @@ class FormManager extends Component {
       //   console.log("update");
       this.setState({
         form: { ...this.props.manager, isEdit: true },
-        btnName: "Update",
+        btnName: "Actualizar",
         btnClass:
           "bg-btnEdit w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold border-2 border-btnEdit hover:bg-white hover:text-textButton transition duration-500",
       });
@@ -96,7 +96,13 @@ class FormManager extends Component {
       },
     });
 
-    // document.querySelector("form").reset();
+    this.setState({
+      btnName: "Guardar",
+      btnClass:
+        "bg-textButton w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold border-2 border-textButton hover:bg-white hover:text-textButton transition duration-500",
+    });
+
+    document.querySelector("form").reset();
   };
 
   render() {
@@ -108,9 +114,9 @@ class FormManager extends Component {
             type="text"
             name="nombre_hotel"
             placeholder="Nombre de hotel"
-            className="border border-gray-300 rounded px-3 py-2 w-3/4"
-            value={this.state.form.nombre_hotel}
             onChange={this.handleChange}
+            value={this.state.form.nombre_hotel}
+            className="border border-gray-300 rounded px-3 py-2 w-3/4"
           />
         </div>
         <div className="flex items-center">
@@ -119,9 +125,9 @@ class FormManager extends Component {
             type="text"
             name="nombre_persona"
             placeholder="Nombre completo"
-            className="border border-gray-300 rounded px-3 py-2 w-3/4"
-            value={this.state.form.nombre_persona}
             onChange={this.handleChange}
+            value={this.state.form.nombre_persona}
+            className="border border-gray-300 rounded px-3 py-2 w-3/4"
           />
         </div>
         <div className="flex items-center">
@@ -130,9 +136,9 @@ class FormManager extends Component {
             type="text"
             name="telefono"
             placeholder="Teléfono"
-            className="border border-gray-300 rounded px-3 py-2 w-3/4"
-            value={this.state.form.telefono}
             onChange={this.handleChange}
+            value={this.state.form.telefono}
+            className="border border-gray-300 rounded px-3 py-2 w-3/4"
           />
         </div>
         <div className="flex items-center">
@@ -141,9 +147,9 @@ class FormManager extends Component {
             type="text"
             name="fecha_renovacion"
             placeholder="Fecha de renovación"
-            className="border border-gray-300 rounded px-3 py-2 w-3/4"
-            value={this.state.form.fecha_renovacion}
             onChange={this.handleChange}
+            value={this.state.form.fecha_renovacion}
+            className="border border-gray-300 rounded px-3 py-2 w-3/4"
           />
         </div>
         <div className="flex items-center">
@@ -152,9 +158,9 @@ class FormManager extends Component {
             type="text"
             name="email"
             placeholder="Correo electrónico"
-            className="border border-gray-300 rounded px-3 py-2 w-3/4"
-            value={this.state.form.email}
             onChange={this.handleChange}
+            value={this.state.form.email}
+            className="border border-gray-300 rounded px-3 py-2 w-3/4"
           />
         </div>
         <div className="flex items-center">
@@ -163,9 +169,9 @@ class FormManager extends Component {
             type="text"
             name="password"
             placeholder="Ingrese correo predeterminado"
-            className="border border-gray-300 rounded px-3 py-2 w-3/4"
-            value={this.state.form.password}
             onChange={this.handleChange}
+            value={this.state.form.password}
+            className="border border-gray-300 rounded px-3 py-2 w-3/4"
           />
         </div>
         <div className="flex justify-center">
