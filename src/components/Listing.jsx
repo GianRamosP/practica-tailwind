@@ -1,6 +1,6 @@
 import React from "react";
-import habitacion from "../assets/habitacion.jpg";
-import buffet from "../assets/buffetcomida.jpg";
+import habitacion from "../assets/images/rooms/habitacion.jpg";
+import buffet from "../assets/images/amenities/buffetcomida.jpg";
 import Line from "./Line";
 import ButtonWhite from "./buttons/ButtonWhite";
 

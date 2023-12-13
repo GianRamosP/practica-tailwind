@@ -1,15 +1,15 @@
 import Header from "../components/Header";
-import camadoble from "../assets/camadoble.jpg";
-import cama1 from "../assets/cama1.jpg";
-import cama2 from "../assets/cama2.jpg";
-import cama3 from "../assets/cama3.jpg";
-import cama4 from "../assets/cama4.jpg";
+import camadoble from "../assets/images/rooms/camadoble.jpg";
+import cama1 from "../assets/images/rooms/cama1.jpg";
+import cama2 from "../assets/images/rooms/cama2.jpg";
+import cama3 from "../assets/images/rooms/cama3.jpg";
+import cama4 from "../assets/images/rooms/cama4.jpg";
 import { Carousel } from "react-responsive-carousel";
 import Footer from "../components/Footer";
 import HotelBusqueda from "../components/items/HotelBusqueda";
-import slide4 from "../assets/slide4.jpg";
-import slide5 from "../assets/slide5.jpg";
-import slide6 from "../assets/slide6.jpg";
+import slide4 from "../assets/images/amenities/slide4.jpg";
+import slide5 from "../assets/images/amenities/slide5.jpg";
+import slide6 from "../assets/images/amenities/slide6.jpg";
 import FilterBar from "../components/FilterBar";
 import RoomSale from "../components/RoomSale";
 
