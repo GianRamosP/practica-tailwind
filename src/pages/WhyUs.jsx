@@ -457,7 +457,7 @@ export default function WhyUs() {
           <div className="mx-auto">
             <div className="flex flex-wrap justify-between">
               <div className="w-full md:w-1/4 p-5">
-                {/* s */}
+                
                 <div className="flex justify-between flex-row w-[160px] h-[41px] items-center">
                   <div className="rounded-full bg-logo w-[41px] h-[41px]">
                     <p className="text-center leading-[41px] text-bold text-[26px] text-white font-bold">
@@ -468,7 +468,7 @@ export default function WhyUs() {
                     Hotel
                   </p>
                 </div>
-                {/* s */}
+                
 
                 <h4 className="mb-4">Contacto</h4>
                 <ul>
