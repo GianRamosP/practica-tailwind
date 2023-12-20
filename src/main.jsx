@@ -23,8 +23,6 @@ import HotelManagement from "./pages/HotelManagement";
 import Signup from "./pages/Signup";
 import AdministrarDuenos from "./pages/admin_users_hotels";
 
-actualizada;
-
 const router = createBrowserRouter([
   {
     path: "/",

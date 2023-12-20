@@ -115,7 +115,7 @@ export default function Index() {
 <body>
   <FilterBar />
 
-  <div class="container mx-auto px-4">
+  <div className="container mx-auto px-4">
     <div
       className="max-w-2xl mx-auto my-10"
       style={{ maxHeight: "500px", overflowY: "auto" }}
@@ -156,13 +156,13 @@ export default function Index() {
     </div>
   </div>
 
-  <div class="container mx-auto px-4">
-    <div class="max-w-6xl mx-auto my-10">
+  <div className="container mx-auto px-4">
+    <div className="max-w-6xl mx-auto my-10">
       <h2 class="text-2xl font-semibold text-gray-800 text-center mb-6">
         Ofertas por tiempo limitado de Habitaciones
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <RoomSale
           imagen={camadoble}
           alt="Habitación en Oferta"
@@ -196,24 +196,24 @@ export default function Index() {
       </div>
     </div>
   </div>
-  <div class="text-center my-8">
+  <div className="text-center my-8">
     <h3 class="text-2xl font-semibold text-gray-700">
       ¿Buscas un hotel en específico?
     </h3>
   </div>
 
   {/* Barra de búsqueda */}
-      <div class="flex justify-center mb-8">
+      <div className="flex justify-center mb-8">
         <input
           type="text"
           placeholder="Ingresa el nombre del hotel"
-          class="w-full max-w-xl px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+          className="w-full max-w-xl px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300"
           // Añade aquí las funciones para manejar la búsqueda
         />
       </div>
 
       {/* Lista de hoteles en tarjetas */}
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Itera sobre la lista de hoteles y crea una tarjeta para cada uno */}
         <HotelBusqueda
           image={camadoble}

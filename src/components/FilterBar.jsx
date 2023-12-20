@@ -3,19 +3,19 @@ import Checkbox from "../components/Checkbox";
 
 const FilterBar = ({ id, name, text }) => {
   return (
-    <div class="container mx-auto px-4">
-      <div class="max-w-2xl mx-auto my-10">
-        <div class="bg-white p-5 rounded-md shadow-sm">
-          <h2 class="text-xl font-semibold text-gray-700 text-center">
+    <div className="container mx-auto px-4">
+      <div className="max-w-2xl mx-auto my-10">
+        <div className="bg-white p-5 rounded-md shadow-sm">
+          <h2 className="text-xl font-semibold text-gray-700 text-center">
             Buscar Hoteles
           </h2>
           <form
             action="/ruta-para-busqueda-hoteles"
             method="get"
-            class="space-y-4"
+            className="space-y-4"
           >
             <div>
-              <label for="lugar" class="block text-sm text-gray-600">
+              <label for="lugar" className="block text-sm text-gray-600">
                 Lugar
               </label>
               <input
@@ -24,12 +24,15 @@ const FilterBar = ({ id, name, text }) => {
                 name="lugar"
                 placeholder="Ingresa un destino"
                 required
-                class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100"
               />
             </div>
-            <div class="flex space-x-4">
-              <div class="w-1/2">
-                <label for="fecha_llegada" class="block text-sm text-gray-600">
+            <div className="flex space-x-4">
+              <div className="w-1/2">
+                <label
+                  for="fecha_llegada"
+                  clasName="block text-sm text-gray-600"
+                >
                   Fecha de Llegada
                 </label>
                 <input
@@ -37,11 +40,14 @@ const FilterBar = ({ id, name, text }) => {
                   id="fecha_llegada"
                   name="fecha_llegada"
                   required
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100"
                 />
               </div>
-              <div class="w-1/2">
-                <label for="fecha_partida" class="block text-sm text-gray-600">
+              <div className="w-1/2">
+                <label
+                  for="fecha_partida"
+                  className="block text-sm text-gray-600"
+                >
                   Fecha de Partida
                 </label>
                 <input
@@ -49,20 +55,20 @@ const FilterBar = ({ id, name, text }) => {
                   id="fecha_partida"
                   name="fecha_partida"
                   required
-                  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100"
                 />
               </div>
             </div>
             <div>
-              <div class="flex items-center">
-                <label for="camas" class="mr-2">
+              <div className="flex items-center">
+                <label for="camas" className="mr-2">
                   Número de camas:
                 </label>
                 <select
                   id="camas"
                   name="camas"
                   required
-                  class="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100 w-auto"
+                  className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-100 w-auto"
                 >
                   <option value="">Selecciona</option>
                   <option value="1">1</option>
@@ -77,7 +83,7 @@ const FilterBar = ({ id, name, text }) => {
                 </select>
               </div>
 
-              <div class="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-2 gap-4">
                 <Checkbox id="piscina" name="piscina" text="Piscina" />
                 <Checkbox id="wifi" name="wifi" text="Wifi" />
                 <Checkbox
@@ -102,10 +108,10 @@ const FilterBar = ({ id, name, text }) => {
                 />
               </div>
             </div>
-            <div class="text-center">
+            <div className="text-center">
               <button
                 type="submit"
-                class="px-4 py-2 text-white bg-blue-500 rounded-md focus:bg-blue-600 focus:outline-none"
+                className="px-4 py-2 text-white bg-blue-500 rounded-md focus:bg-blue-600 focus:outline-none"
               >
                 Buscar
               </button>

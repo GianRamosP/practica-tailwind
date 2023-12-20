@@ -6,6 +6,7 @@ import habitacion from "../assets/images/rooms/habitacion.jpg";
 import Line from "../components/Line";
 import buffet from "../assets/images/amenities/buffetcomida.jpg";
 import logo from "../assets/images/logos/logo.png";
+import Header from "../components/Header";
 
 export default function WhyUs() {
   return (
@@ -229,157 +230,171 @@ export default function WhyUs() {
           </div>
         </main>
         <section className="my-[110px]"></section>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
               src={camadoble}
               alt="Habitación en Oferta"
-              class="w-full h-56 object-cover"
+              className="w-full h-56 object-cover"
             />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-700">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-700">
                 Habitación Doble - Vista al Mar
               </h3>
-              <p class="text-gray-600">
+              <p className="text-gray-600">
                 Disfruta de una experiencia inolvidable con vista al océano y
                 todas las comodidades.
               </p>
-              <div class="flex justify-between items-center mt-4">
-                <span class="text-xl font-bold text-gray-800">$80/noche</span>
-                <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-xl font-bold text-gray-800">
+                  $80/noche
+                </span>
+                <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                   Reservar
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
               src={camadoble}
               alt="Habitación en Oferta"
-              class="w-full h-56 object-cover"
+              className="w-full h-56 object-cover"
             />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-700">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-700">
                 Habitación Individual - Vista a la Ciudad
               </h3>
-              <p class="text-gray-600">
+              <p className="text-gray-600">
                 Experimenta la comodidad y la energía de la ciudad desde tu
                 habitación privada.
               </p>
-              <div class="flex justify-between items-center mt-4">
-                <span class="text-xl font-bold text-gray-800">$60/noche</span>
-                <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-xl font-bold text-gray-800">
+                  $60/noche
+                </span>
+                <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                   Reservar
                 </button>
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
               src={camadoble}
               alt="Habitación en Oferta"
-              class="w-full h-56 object-cover"
+              className="w-full h-56 object-cover"
             />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-700">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-700">
                 Suite Deluxe - Terraza Privada
               </h3>
-              <p class="text-gray-600">
+              <p className="text-gray-600">
                 Disfruta de una estancia lujosa con tu propia terraza privada y
                 todas las comodidades exclusivas.
               </p>
-              <div class="flex justify-between items-center mt-4">
-                <span class="text-xl font-bold text-gray-800">$120/noche</span>
-                <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-xl font-bold text-gray-800">
+                  $120/noche
+                </span>
+                <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                   Reservar
                 </button>
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
               src={camadoble}
               alt="Habitación en Oferta"
-              class="w-full h-56 object-cover"
+              className="w-full h-56 object-cover"
             />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-700">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-700">
                 Habitación Familiar - Vistas al Jardín
               </h3>
-              <p class="text-gray-600">
+              <p className="text-gray-600">
                 Ideal para familias, con hermosas vistas al jardín y espacio
                 para todos.
               </p>
-              <div class="flex justify-between items-center mt-4">
-                <span class="text-xl font-bold text-gray-800">$100/noche</span>
-                <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-xl font-bold text-gray-800">
+                  $100/noche
+                </span>
+                <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                   Reservar
                 </button>
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
               src={camadoble}
               alt="Habitación en Oferta"
-              class="w-full h-56 object-cover"
+              className="w-full h-56 object-cover"
             />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-700">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-700">
                 Suite Ejecutiva - Piscina Privada
               </h3>
-              <p class="text-gray-600">
+              <p className="text-gray-600">
                 Experimenta el lujo con tu propia piscina privada y servicios
                 ejecutivos de alta calidad.
               </p>
-              <div class="flex justify-between items-center mt-4">
-                <span class="text-xl font-bold text-gray-800">$200/noche</span>
-                <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-xl font-bold text-gray-800">
+                  $200/noche
+                </span>
+                <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                   Reservar
                 </button>
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
               src={camadoble}
               alt="Habitación en Oferta"
-              class="w-full h-56 object-cover"
+              className="w-full h-56 object-cover"
             />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-700">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-700">
                 Habitación Temática - Aventura en la Selva
               </h3>
-              <p class="text-gray-600">
+              <p className="text-gray-600">
                 Vive una experiencia única con una habitación temática que te
                 transporta a la selva.
               </p>
-              <div class="flex justify-between items-center mt-4">
-                <span class="text-xl font-bold text-gray-800">$90/noche</span>
-                <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-xl font-bold text-gray-800">
+                  $90/noche
+                </span>
+                <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                   Reservar
                 </button>
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <img
               src={camadoble}
               alt="Habitación en Oferta"
-              class="w-full h-56 object-cover"
+              className="w-full h-56 object-cover"
             />
-            <div class="p-4">
-              <h3 class="text-lg font-semibold text-gray-700">
+            <div className="p-4">
+              <h3 className="text-lg font-semibold text-gray-700">
                 Habitación Deluxe - Servicio de Spa Incluido
               </h3>
-              <p class="text-gray-600">
+              <p className="text-gray-600">
                 Relájate y rejuvenece con nuestro servicio de spa exclusivo
                 incluido en tu estancia.
               </p>
-              <div class="flex justify-between items-center mt-4">
-                <span class="text-xl font-bold text-gray-800">$150/noche</span>
-                <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+              <div className="flex justify-between items-center mt-4">
+                <span className="text-xl font-bold text-gray-800">
+                  $150/noche
+                </span>
+                <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                   Reservar
                 </button>
               </div>
@@ -393,18 +408,18 @@ export default function WhyUs() {
           ></img>
         </div>
         <section>
-          <div class="flex justify-between items-center bg-white text-black p-10 w-full">
+          <div className="flex justify-between items-center bg-white text-black p-10 w-full">
             <img
               src={habitacion}
               alt="Imagen de habitación"
-              class="w-1/2 mr-4"
+              className="w-1/2 mr-4"
             ></img>
-            <div class="flex flex-col w-[486px]">
-              <h2 class="font-bold text-[36px]">
+            <div className="flex flex-col w-[486px]">
+              <h2 className="font-bold text-[36px]">
                 Zariman: Donde el Lujo Encuentra su Hogar
               </h2>
               <Line />
-              <p class="text-[18px] text-text">
+              <p className="text-[18px] text-text">
                 Descubre la cúspide del confort y el estilo en nuestras
                 habitaciones exquisitamente diseñadas. ¡Tu escapada de ensueño
                 comienza aquí!
@@ -414,13 +429,13 @@ export default function WhyUs() {
               </button>
             </div>
           </div>
-          <div class="flex justify-between items-center bg-white text-black p-10 w-full">
-            <div class="flex flex-col w-[486px]">
-              <h2 class="font-bold text-[36px]">
+          <div className="flex justify-between items-center bg-white text-black p-10 w-full">
+            <div className="flex flex-col w-[486px]">
+              <h2 className="font-bold text-[36px]">
                 Sabor Inigualable en Zariman
               </h2>
               <Line />
-              <p class="text-text text-[18px]">
+              <p className="text-text text-[18px]">
                 Embárcate en un festín para los sentidos en nuestro buffet de
                 clase mundial. Sabores extraordinarios que harán de cada comida
                 un deleite inolvidable. ¡Sumérgete en la excelencia culinaria en
@@ -433,7 +448,7 @@ export default function WhyUs() {
             <img
               src={buffet}
               alt="Imagen de habitación"
-              class="w-1/2 ml-4"
+              className="w-1/2 ml-4"
             ></img>
           </div>
         </section>

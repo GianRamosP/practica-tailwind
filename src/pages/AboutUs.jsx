@@ -130,8 +130,8 @@ export default function AboutUs() {
       </Carousel>
       <div className="mb-5"></div>
       <div className="mb-5 flex justify-center">
-        <div class="flex justify-between items-center">
-          <label for="hosts" class="mr-2">
+        <div className="flex justify-between items-center">
+          <label for="hosts" className="mr-2">
             Número de huespedes:
           </label>
           <input
@@ -140,10 +140,10 @@ export default function AboutUs() {
             name="hosts"
             min="1"
             max="10"
-            class="rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
 
-          <label for="price" class="mr-2 ml-4">
+          <label for="price" className="mr-2 ml-4">
             Precio máximo:
           </label>
           <input
@@ -151,143 +151,143 @@ export default function AboutUs() {
             id="price"
             name="price"
             min="0"
-            class="rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+            className="rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
           />
-          <button class="ml-4 px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+          <button className="ml-4 px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
             Buscar
           </button>
         </div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
             src={camadoble}
             alt="Habitación en Oferta"
-            class="w-full h-56 object-cover"
+            className="w-full h-56 object-cover"
           />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-700">
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-gray-700">
               Habitación Doble - Vista al Mar
             </h3>
-            <p class="text-gray-600">
+            <p className="text-gray-600">
               Disfruta de una experiencia inolvidable con vista al océano y
               todas las comodidades.
             </p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="text-xl font-bold text-gray-800">$80/noche</span>
-              <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-xl font-bold text-gray-800">$80/noche</span>
+              <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                 Reservar
               </button>
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
             src={camadoble}
             alt="Habitación en Oferta"
-            class="w-full h-56 object-cover"
+            className="w-full h-56 object-cover"
           />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-700">
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-gray-700">
               Habitación Doble - Vista al Mar
             </h3>
-            <p class="text-gray-600">
+            <p className="text-gray-600">
               Disfruta de una experiencia inolvidable con vista al océano y
               todas las comodidades.
             </p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="text-xl font-bold text-gray-800">$80/noche</span>
-              <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-xl font-bold text-gray-800">$80/noche</span>
+              <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                 Reservar
               </button>
             </div>
           </div>
         </div>
 
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
             src={camadoble}
             alt="Habitación en Oferta"
-            class="w-full h-56 object-cover"
+            className="w-full h-56 object-cover"
           />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-700">
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-gray-700">
               Habitación Doble - Vista al Mar
             </h3>
-            <p class="text-gray-600">
+            <p className="text-gray-600">
               Disfruta de una experiencia inolvidable con vista al océano y
               todas las comodidades.
             </p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="text-xl font-bold text-gray-800">$80/noche</span>
-              <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-xl font-bold text-gray-800">$80/noche</span>
+              <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                 Reservar
               </button>
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
             src={camadoble}
             alt="Habitación en Oferta"
-            class="w-full h-56 object-cover"
+            className="w-full h-56 object-cover"
           />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-700">
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-gray-700">
               Habitación Doble - Vista al Mar
             </h3>
-            <p class="text-gray-600">
+            <p className="text-gray-600">
               Disfruta de una experiencia inolvidable con vista al océano y
               todas las comodidades.
             </p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="text-xl font-bold text-gray-800">$80/noche</span>
-              <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-xl font-bold text-gray-800">$80/noche</span>
+              <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                 Reservar
               </button>
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
             src={camadoble}
             alt="Habitación en Oferta"
-            class="w-full h-56 object-cover"
+            className="w-full h-56 object-cover"
           />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-700">
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-gray-700">
               Habitación Doble - Vista al Mar
             </h3>
-            <p class="text-gray-600">
+            <p className="text-gray-600">
               Disfruta de una experiencia inolvidable con vista al océano y
               todas las comodidades.
             </p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="text-xl font-bold text-gray-800">$80/noche</span>
-              <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-xl font-bold text-gray-800">$80/noche</span>
+              <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                 Reservar
               </button>
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <img
             src={camadoble}
             alt="Habitación en Oferta"
-            class="w-full h-56 object-cover"
+            className="w-full h-56 object-cover"
           />
-          <div class="p-4">
-            <h3 class="text-lg font-semibold text-gray-700">
+          <div className="p-4">
+            <h3 className="text-lg font-semibold text-gray-700">
               Habitación Doble - Vista al Mar
             </h3>
-            <p class="text-gray-600">
+            <p className="text-gray-600">
               Disfruta de una experiencia inolvidable con vista al océano y
               todas las comodidades.
             </p>
-            <div class="flex justify-between items-center mt-4">
-              <span class="text-xl font-bold text-gray-800">$80/noche</span>
-              <button class="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+            <div className="flex justify-between items-center mt-4">
+              <span className="text-xl font-bold text-gray-800">$80/noche</span>
+              <button className="px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
                 Reservar
               </button>
             </div>
@@ -299,18 +299,18 @@ export default function AboutUs() {
       <div className="mb-5"></div>
 
       <section>
-        <div class="flex justify-between items-center bg-white text-black p-10 w-full">
+        <div className="flex justify-between items-center bg-white text-black p-10 w-full">
           <img
             src={habitacion}
             alt="Imagen de habitación"
-            class="w-1/2 mr-4"
+            className="w-1/2 mr-4"
           ></img>
-          <div class="flex flex-col w-[486px]">
-            <h2 class="font-bold text-[36px]">
+          <div className="flex flex-col w-[486px]">
+            <h2 className="font-bold text-[36px]">
               Zariman: Donde el Lujo Encuentra su Hogar
             </h2>
             <Line />
-            <p class="text-[18px] text-text">
+            <p className="text-[18px] text-text">
               Descubre la cúspide del confort y el estilo en nuestras
               habitaciones exquisitamente diseñadas. ¡Tu escapada de ensueño
               comienza aquí!
@@ -320,11 +320,13 @@ export default function AboutUs() {
             </button>
           </div>
         </div>
-        <div class="flex justify-between items-center bg-white text-black p-10 w-full">
-          <div class="flex flex-col w-[486px]">
-            <h2 class="font-bold text-[36px]">Sabor Inigualable en Zariman</h2>
+        <div className="flex justify-between items-center bg-white text-black p-10 w-full">
+          <div className="flex flex-col w-[486px]">
+            <h2 className="font-bold text-[36px]">
+              Sabor Inigualable en Zariman
+            </h2>
             <Line />
-            <p class="text-text text-[18px]">
+            <p className="text-text text-[18px]">
               Embárcate en un festín para los sentidos en nuestro buffet de
               clase mundial. Sabores extraordinarios que harán de cada comida un
               deleite inolvidable. ¡Sumérgete en la excelencia culinaria en
@@ -334,7 +336,11 @@ export default function AboutUs() {
               Ver más
             </button>
           </div>
-          <img src={buffet} alt="Imagen de habitación" class="w-1/2 ml-4"></img>
+          <img
+            src={buffet}
+            alt="Imagen de habitación"
+            className="w-1/2 ml-4"
+          ></img>
         </div>
       </section>
 
