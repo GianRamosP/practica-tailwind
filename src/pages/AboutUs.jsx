@@ -11,6 +11,7 @@ import { Link } from "react-router-dom";
 import habitacion from "../assets/images/rooms/habitacion.jpg";
 import Line from "../components/Line";
 import buffet from "../assets/images/amenities/buffetcomida.jpg";
+import { Slider } from "@material-tailwind/react";
 
 export default function AboutUs() {
   return (
@@ -130,30 +131,22 @@ export default function AboutUs() {
       </Carousel>
       <div className="mb-5"></div>
       <div className="mb-5 flex justify-center">
-        <div className="flex justify-between items-center">
-          <label for="hosts" className="mr-2">
+      <div class="flex justify-between items-center">
+          <label for="hosts" class="mr-2">
             Número de huespedes:
           </label>
-          <input
-            type="number"
-            id="hosts"
-            name="hosts"
-            min="1"
-            max="10"
-            className="rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-          />
+          <Slider color="blue" defaultValue={0} />
+          <label for="price" class="mr-2 ml-4">
+            Precio minimo:
+          </label>
+          
+          <Slider color="blue" defaultValue={0} />
 
-          <label for="price" className="mr-2 ml-4">
+          <label for="price" class="mr-2 ml-4">
             Precio máximo:
           </label>
-          <input
-            type="number"
-            id="price"
-            name="price"
-            min="0"
-            className="rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
-          />
-          <button className="ml-4 px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
+          <Slider color="blue" defaultValue={0} />
+          <button class="ml-4 px-4 py-2 text-white bg-blue-500 rounded-md focus:outline-none hover:bg-blue-600">
             Buscar
           </button>
         </div>
