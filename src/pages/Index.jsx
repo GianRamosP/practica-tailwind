@@ -23,7 +23,7 @@ export default function Index() {
     <>
       <Header />
 
-      <main className="flex flex-row justify-between">
+      <main className="flex flex-row justify-between mx-[100px]">
         <div className="mt-[120px] w-[30%]">
           <h2 className="text-[48px] font-medium w-[426px] leading-[56px]">
             Tu hogar lejos de casa.
@@ -31,23 +31,19 @@ export default function Index() {
           <p className="font-light w-[445px] mt-[25px] text-text">
             Descubre la elegancia en cada detalle.
           </p>
-          <ButtonBlue texto="Reserve aquí" />
+          <ButtonBlue text="Reserve aquí" />
         </div>
       </main>
 
-      
-      <div className="flex justify-center mb-8">
+      <div className="flex justify-center mb-8 mx-[100px]">
         <input
           type="text"
           placeholder="Ingresa el nombre del hotel"
           className="w-full max-w-xl px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300"
-      
         />
       </div>
 
-      
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-[100px]">
         <HotelBusqueda
           image={camadoble}
           hotelName="Hotel Los Andes"
