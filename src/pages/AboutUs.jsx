@@ -59,79 +59,9 @@ export default function AboutUs() {
         </div>
       </header>
 
-      <Carousel
-        className="h-1/2 "
-        showThumbs={false}
-        autoPlay
-        interval={2500}
-        showStatus={false}
-        infiniteLoop={true}
-      >
-        <div className="relative bg-gray-100 h-96">
-          <img
-            src={slide1}
-            alt="Slide 1"
-            className="w-full h-full object-cover"
-          />
-
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start">
-            <div className="bg-white bg-opacity-75 p-6 m-12 rounded-lg">
-              <h2 className="text-3xl font-bold text-gray-800">
-                Encuentra tu hotel ideal
-              </h2>
-              <p className="text-gray-700">
-                Explora las mejores ofertas y reserva tu estancia perfecta.
-              </p>
-              <button className="bg-textButton w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold border-2 border-textButton hover:bg-white hover:text-textButton transition duration-500">
-                Reserve aquí
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="relative bg-gray-100 h-96">
-          <img
-            src={slide2}
-            alt="Slide 2"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start">
-            <div className="bg-white bg-opacity-75 p-6 m-12 rounded-lg">
-              <h2 className="text-3xl font-bold text-gray-800">
-                Encuentra tu hotel ideal
-              </h2>
-              <p className="text-gray-700">
-                Explora las mejores ofertas y reserva tu estancia perfecta.
-              </p>
-              <button className="bg-textButton w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold border-2 border-textButton hover:bg-white hover:text-textButton transition duration-500">
-                Reserve aquí
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="relative bg-gray-100 h-96">
-          <img
-            src={slide3}
-            alt="Slide 3"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute top-0 left-0 w-full h-full flex items-center justify-start">
-            <div className="bg-white bg-opacity-75 p-6 m-12 rounded-lg">
-              <h2 className="text-3xl font-bold text-gray-800">
-                Encuentra tu hotel ideal
-              </h2>
-              <p className="text-gray-700">
-                Explora las mejores ofertas y reserva tu estancia perfecta.
-              </p>
-              <button className="bg-textButton w-[200px] h-[60px] rounded-[55px] text-white mt-[49px] font-bold border-2 border-textButton hover:bg-white hover:text-textButton transition duration-500">
-                Conoce mas
-              </button>
-            </div>
-          </div>
-        </div>
-      </Carousel>
       <div className="mb-5"></div>
       <div className="mb-5 flex justify-center">
-      <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center">
           <label for="hosts" class="mr-2">
             Número de huespedes:
           </label>
@@ -139,7 +69,7 @@ export default function AboutUs() {
           <label for="price" class="mr-2 ml-4">
             Precio minimo:
           </label>
-          
+
           <Slider color="blue" defaultValue={0} />
 
           <label for="price" class="mr-2 ml-4">
@@ -288,54 +218,6 @@ export default function AboutUs() {
         </div>
       </div>
       <div className="mb-5"></div>
-      <Services></Services>
-      <div className="mb-5"></div>
-
-      <section>
-        <div className="flex justify-between items-center bg-white text-black p-10 w-full">
-          <img
-            src={habitacion}
-            alt="Imagen de habitación"
-            className="w-1/2 mr-4"
-          ></img>
-          <div className="flex flex-col w-[486px]">
-            <h2 className="font-bold text-[36px]">
-              Zariman: Donde el Lujo Encuentra su Hogar
-            </h2>
-            <Line />
-            <p className="text-[18px] text-text">
-              Descubre la cúspide del confort y el estilo en nuestras
-              habitaciones exquisitamente diseñadas. ¡Tu escapada de ensueño
-              comienza aquí!
-            </p>
-            <button className="w-[200px] h-[60px] rounded-[55px] border-2 border-textButton text-textButton mt-[62px] hover:bg-textButton hover:text-white font-bold transition duration-500">
-              Ver más
-            </button>
-          </div>
-        </div>
-        <div className="flex justify-between items-center bg-white text-black p-10 w-full">
-          <div className="flex flex-col w-[486px]">
-            <h2 className="font-bold text-[36px]">
-              Sabor Inigualable en Zariman
-            </h2>
-            <Line />
-            <p className="text-text text-[18px]">
-              Embárcate en un festín para los sentidos en nuestro buffet de
-              clase mundial. Sabores extraordinarios que harán de cada comida un
-              deleite inolvidable. ¡Sumérgete en la excelencia culinaria en
-              Zariman!
-            </p>
-            <button className="w-[200px] h-[60px] rounded-[55px] border-2 border-textButton text-textButton mt-[62px] hover:bg-textButton hover:text-white font-bold transition duration-500">
-              Ver más
-            </button>
-          </div>
-          <img
-            src={buffet}
-            alt="Imagen de habitación"
-            className="w-1/2 ml-4"
-          ></img>
-        </div>
-      </section>
 
       <Footer></Footer>
     </>
