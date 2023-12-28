@@ -14,12 +14,21 @@ class Admin extends Component {
       process.env.NODE_ENV === "production"
         ? "/api/managers" // API Produccion
         : "http://localhost/laravel-rest-api/public/api/managers",
+    axios: null, // Agrega una referencia a axios en el estado
   };
 
   getManagers = async () => {
+    const { axios } = this.state;
+    if (!axios) return;
+
     this.setState({ loader: true });
-    const managers = await axios.get(this.state.url);
-    this.setState({ managers: managers.data, loader: false });
+    try {
+      const managers = await axios.get(this.state.url);
+      this.setState({ managers: managers.data, loader: false });
+    } catch (error) {
+      console.error("Error fetching managers:", error);
+      this.setState({ loader: false });
+    }
   };
 
   deleteManager = async (id) => {
@@ -60,9 +69,14 @@ class Admin extends Component {
   };
 
   async componentDidMount() {
-    const axios = await import("axios");
-    this.setState({ axios });
-    this.getManagers();
+    try {
+      const axios = await import("axios");
+      this.setState({ axios }, () => {
+        this.getManagers();
+      });
+    } catch (error) {
+      console.error("Error importing axios:", error);
+    }
   }
 
   onDelete = (id) => {
