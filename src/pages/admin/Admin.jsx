@@ -59,7 +59,9 @@ class Admin extends Component {
     this.getManagers();
   };
 
-  componentDidMount() {
+  async componentDidMount() {
+    const axios = await import("axios");
+    this.setState({ axios });
     this.getManagers();
   }
 
