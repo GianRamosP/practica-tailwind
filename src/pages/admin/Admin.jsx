@@ -10,7 +10,10 @@ class Admin extends Component {
     managers: [],
     manager: {},
     loader: false,
-    url: "http://localhost/laravel-rest-api/public/api/managers",
+    url:
+      process.env.NODE_ENV === "production"
+        ? "/api/managers" // API Produccion
+        : "http://localhost/laravel-rest-api/public/api/managers",
   };
 
   getManagers = async () => {
