@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import axios from "axios";
+import axios from "../../../node_modules/axios";
 import Header from "../../components/Header";
 import ManagerList from "../../components/table/ManagerList";
 import Loader from "../../components/Loader";
