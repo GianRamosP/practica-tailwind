@@ -11,8 +11,24 @@ import { Link } from 'react-router-dom';
 import habitacion from "../assets/\habitacion.jpg";
 import Line from "../components/Line";
 import buffet from "../assets/buffetcomida.jpg";
+import AwardCard from '../components/AwardCard';
 
+import TestimonialCard from '../components/items/TestimonialCard';
 export default function AboutUs() {
+
+  const awardsData = [
+    { id: 1, imagen: "url_de_la_imagen_1", alt: "Descripción de la imagen 1", titulo: "Premio 1", descripcion: "Descripción del premio 1.", fecha: "2022" },
+    { id: 2, imagen: "url_de_la_imagen_2", alt: "Descripción de la imagen 2", titulo: "Premio 2", descripcion: "Descripción del premio 2.", fecha: "2021" },
+    { id: 3, imagen: "url_de_la_imagen_3", alt: "Descripción de la imagen 3", titulo: "Premio 3", descripcion: "Descripción del premio 3.", fecha: "2020" },
+    
+  ];
+
+  const testimonialsData = [
+    { id: 1, testimonio: "¡Experiencia increíble! El servicio y las instalaciones son de primera categoría.", nombre: "Juan Pérez", puesto: "Cliente Satisfecho" },
+    { id: 2, testimonio: "El personal es amable y siempre dispuesto a ayudar. Definitivamente volveré.", nombre: "María Rodríguez", puesto: "Visitante Regular" },
+    { id: 3, testimonio: "Habitaciones limpias y cómodas. Una estancia perfecta para viajes de negocios.", nombre: "Carlos Gómez", puesto: "Empresario" },
+    
+  ];
   return (
     <>
       <header className="flex justify-between items-center mt-[10px]">
@@ -183,11 +199,28 @@ export default function AboutUs() {
 
 </div>
 <div className="mb-5" ></div>
-<Services></Services>
+
+<div className="text-center">
+      <h2 className="text-2xl font-semibold mb-4">Nuestros Premios y Reconocimientos</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {awardsData.map((award) => (
+          <div key={award.id} className="flex items-center justify-center">
+            
+            <AwardCard
+              imagen={award.imagen}
+              alt={award.alt}
+              titulo={award.titulo}
+              descripcion={award.descripcion}
+              fecha={award.fecha}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+
 <div className="mb-5" ></div>
 
-      
-     
+
 
       
 
@@ -229,6 +262,22 @@ export default function AboutUs() {
       </div>
       </section>
       
+
+      <div className="text-center">
+      <h2 className="text-2xl font-semibold mb-4">Testimonios y Reseñas</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {testimonialsData.map((testimonial) => (
+          <div key={testimonial.id}>
+            <TestimonialCard
+              testimonio={testimonial.testimonio}
+              nombre={testimonial.nombre}
+              puesto={testimonial.puesto}
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+     
     
     <Footer></Footer>
     </>
