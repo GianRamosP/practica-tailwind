@@ -4,22 +4,22 @@ import FormLogin from "./login/FormLogin";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center my-[23px] mx-[100px]">
-      <div className="flex justify-between flex-row w-[160px] h-[41px] items-center">
-        <div className="rounded-full bg-logo w-[41px] h-[41px]">
-          <p className="text-center leading-[41px] text-bold text-[26px] text-white font-bold">
+    <header className="mx-[100px] my-[23px] flex items-center justify-between">
+      <div className="flex h-[41px] w-[160px] flex-row items-center justify-between">
+        <div className="h-[41px] w-[41px] rounded-full bg-logo">
+          <p className="text-bold text-center text-[26px] font-bold leading-[41px] text-white">
             H
           </p>
         </div>
         <Link to="/">
-          <p className="text-[24px] text-logoP tracking-[0px] w-[107px] font-mulish font-bold">
+          <p className="font-mulish w-[107px] text-[24px] font-bold tracking-[0px] text-logoP">
             Hotel
           </p>
         </Link>
       </div>
 
-      <nav className="justify-around m-[10px]">
-        <ul className="w-[600px] h-[23px] flex flex-row justify-between text-[18px] font-regular text-selected">
+      <nav className="m-[10px] justify-around">
+        <ul className="font-regular flex h-[23px] w-[600px] flex-row justify-between text-[18px] text-selected">
           <li className="hover:font-bold">
             <Link to="/">Inicio</Link>
           </li>
@@ -29,9 +29,9 @@ export default function Header() {
           <li className="hover:font-bold">
             <Link to="/contact">Contactos</Link>
           </li>
-          <li className="hover:font-bold">
+          {/* <li className="hover:font-bold">
             <Link to="/about">Acerca</Link>
-          </li>
+          </li> */}
           <li className="hover:font-bold">
             <Link to="/whyus">Nosotros</Link>
           </li>

@@ -21,6 +21,7 @@ import Login from "./pages/Login";
 import HotelManagement from "./pages/HotelManagement";
 import Signup from "./pages/Signup";
 import AdministrarDuenos from "./pages/admin_users_hotels";
+import Filter from "./pages/filter/Filter";
 
 const router = createBrowserRouter([
   {
@@ -93,6 +94,10 @@ const router = createBrowserRouter([
   {
     path: "/admin_users_hotels",
     element: <AdministrarDuenos />,
+  },
+  {
+    path: "/filter",
+    element: <Filter />,
   },
 ]);
 

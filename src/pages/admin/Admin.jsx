@@ -10,13 +10,25 @@ class Admin extends Component {
     managers: [],
     manager: {},
     loader: false,
-    url: "https://squirrel-chief-rightly.ngrok-free.app/laravel-rest-api/public/api/managers",
+    // url: "https://squirrel-chief-rightly.ngrok-free.app/laravel-rest-api/public/api/managers",
+    url: "http://localhost/laravel-rest-api/public/api/managers",
   };
 
   getManagers = async () => {
     this.setState({ loader: true });
-    const managers = await axios.get(this.state.url);
-    this.setState({ managers: managers.data, loader: false });
+    try {
+      const response = await axios.get(this.state.url);
+      if (Array.isArray(response.data)) {
+        this.setState({ managers: response.data, loader: false });
+      } else {
+        console.error("La respuesta de la API no es un arreglo.");
+        // En caso no sea un arreglo try/catch
+      }
+    } catch (error) {
+      console.error("Error al obtener datos de la API:", error);
+      // Manejar solicitud http
+      this.setState({ loader: false });
+    }
   };
 
   deleteManager = async (id) => {
