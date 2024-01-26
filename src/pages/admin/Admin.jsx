@@ -11,7 +11,7 @@ class Admin extends Component {
     manager: {},
     loader: false,
     // url: "https://squirrel-chief-rightly.ngrok-free.app/laravel-rest-api/public/api/managers",
-    url: "http://localhost/laravel-rest-api/public/api/managers",
+    url: "https://laravel-rest-api-production.up.railway.app/api/managers",
   };
 
   getManagers = async () => {

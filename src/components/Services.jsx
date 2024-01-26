@@ -72,7 +72,6 @@ export default function Services() {
           de tus reuniones y eventos."
         />
       </div>
-      npm{" "}
     </div>
   );
 }

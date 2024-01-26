@@ -23,12 +23,15 @@ export default function Header() {
           <li className="hover:font-bold">
             <Link to="/">Inicio</Link>
           </li>
-          <li className="hover:font-bold">
+          {/* <li className="hover:font-bold">
             <Link to="/prices">Precios</Link>
-          </li>
+          </li> */}
           <li className="hover:font-bold">
-            <Link to="/contact">Contactos</Link>
+            <Link to="/offers">Ofertas</Link>
           </li>
+          {/* <li className="hover:font-bold">
+            <Link to="/contact">Contactos</Link>
+          </li> */}
           {/* <li className="hover:font-bold">
             <Link to="/about">Acerca</Link>
           </li> */}

@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Index from "./pages/Index";
 import Contact from "./pages/Contact";
+import Index from "./pages/index";
 import AboutUs from "./pages/AboutUs";
 import Booking from "./pages/Booking";
 import Hotel from "./pages/Hotel";
@@ -12,6 +12,7 @@ import Prices from "./pages/Prices";
 import Services from "./pages/Services";
 import WhyUs from "./pages/WhyUs";
 import Error from "./components/Error";
+import Offers from "./pages/Offers";
 
 import Admin from "./pages/admin/Admin";
 import GestoresComponent from "./components/GestoresComponent";
@@ -99,10 +100,14 @@ const router = createBrowserRouter([
     path: "/filter",
     element: <Filter />,
   },
+  {
+    path: "/offers",
+    element: <Offers />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

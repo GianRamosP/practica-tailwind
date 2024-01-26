@@ -1,128 +1,100 @@
-import camadoble from "../assets/images/rooms/camadoble.jpg";
 import { Link } from "react-router-dom";
-import slide2 from "../assets/images/rooms/hotelimagen2.jpg";
 import React from "react";
+import Header from "../components/Header";
+import WhyUsImg from "../assets/images/rooms/whyus_img.jpg";
 import habitacion from "../assets/images/rooms/habitacion.jpg";
+import ButtonWhite from "../components/buttons/ButtonWhite";
 import Line from "../components/Line";
 import buffet from "../assets/images/amenities/buffetcomida.jpg";
-import logo from "../assets/images/logos/logo.png";
-import Header from "../components/Header";
-import utensilios from "../assets/icons/utensils-solid.svg";
-import Conectividad from "../assets/icons/wifi-solid.svg";
-import comodidad from "../assets/icons/wifi-solid.svg";
-import clothcare from "../assets/icons/wifi-solid.svg";
-import lavanderia from "../assets/icons/wifi-solid.svg";
-import reunion from "../assets/icons/wifi-solid.svg";
+import Vision from "../assets/icons/icon_vision.png";
+import Mission from "../assets/icons/icon_mission.png";
+import Footer from "../components/Footer";
+import WhatsappIcon from "../components/icons/WhatsappIcon";
 
 export default function WhyUs() {
   return (
     <>
       <Header />
-      <div>
-        <h4 className="text-center text-xl font-bold mt-12 pb-2 border-b border-gray-200">
-          Nuestros Servicios
-        </h4>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="card bg-white shadow-md rounded-2xl p-10">
-            <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-400 text-white mb-4">
-              <img src={utensilios} alt="utencilios" className="w-6 h-6"></img>
-            </div>
-            <h2 className="font-bold text-2xl mb-2">Exquisita Gastronomía</h2>
-            <p className="text-gray-600 text-base font-light">
-              Disfruta de una experiencia culinaria inolvidable en nuestro
-              restaurante de clase mundial o relájate con el servicio de
-              habitaciones, donde la deliciosa comida llega directamente a tu
-              puerta.
-            </p>
-          </div>
+      <div style={{ position: "relative" }}>
+        <img
+          src={WhyUsImg}
+          alt=""
+          style={{
+            width: "100%",
+            height: "800px",
+            objectFit: "cover",
+          }}
+        />
+        <h2
+          className="mt-[32px] text-center text-[36px] font-bold"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "#fff",
+          }}
+        >
+          CONOCE MAS SOBRE NOSOTROS
+        </h2>
+      </div>
 
-          <div className="card bg-white shadow-md rounded-2xl p-10">
-            <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-400 text-white mb-4">
-              <img
-                src={Conectividad}
-                alt="Conectividad"
-                className="w-6 h-6"
-              ></img>
-            </div>
-            <h2 className="font-bold text-2xl mb-2">
-              Conectividad sin Límites
-            </h2>
-            <p className="text-gray-600 text-base font-light">
-              Mantente conectado con nuestro acceso Wi-Fi de alta velocidad en
-              todas las áreas, garantizando que estés siempre conectado, ya sea
-              por negocios o placer.
+      <section>
+        <div className="flex w-full items-center justify-between bg-white p-10 text-black">
+          <div className="flex w-[486px] flex-col">
+            <h2 className="text-[36px] font-bold">¿Por qué hotel ...?</h2>
+            <Line />
+            <p className="text-[18px] text-text">
+              Somos una firma hotelera establecida en febrero de 9999, centrada
+              en brindar a nuestros visitantes una experiencia de viaje
+              excepcional. Incorporamos las características distintivas de cada
+              ubicación en la que estamos presentes, abarcando desde la
+              arquitectura y decoración hasta la gastronomía, las actividades y
+              la música. De este modo, ofrecemos a nuestros huéspedes una
+              experiencia de viaje verdaderamente singular.
             </p>
+            <ButtonWhite />
           </div>
-
-          <div className="card bg-white shadow-md rounded-2xl p-10">
-            <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-400 text-white mb-4">
-              <img
-                src={comodidad}
-                alt="comodidad"
-                className="w-6 h-6 flex items-center"
-              ></img>
-            </div>
-            <h2 className="font-bold text-2xl mb-2">Bienestar Integral</h2>
-            <p className="text-gray-600 text-base font-light">
-              Descubre la serenidad en nuestro spa de primer nivel y mantente en
-              forma en nuestro moderno gimnasio, diseñado para tu bienestar
-              físico y mental.
-            </p>
+          <img
+            src={buffet}
+            alt="Imagen de habitación"
+            className="ml-4 w-1/2"
+          ></img>
+        </div>
+        <h2 className="mt-[150px] text-center text-[36px] font-bold">
+          Visión y misión
+        </h2>
+        <div className="mx-auto mb-[120px] flex justify-around">
+          <div className="my-[66px] flex w-[25%] flex-col items-center">
+            <img src={Vision} alt="" />
+            <p>Destino de preferencia para experiencias excepcionales.</p>
           </div>
-
-          <div className="card bg-white shadow-md rounded-2xl p-10">
-            <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-400 text-white mb-4">
-              <img
-                src={clothcare}
-                alt="clothcare"
-                className="w-6 h-6 flex items-center"
-              ></img>
-            </div>
-            <h2 className="font-bold text-2xl mb-2">
-              Cuidado de la Ropa sin Preocupaciones
-            </h2>
-            <p className="text-gray-600 text-base font-light">
-              Olvídate de las preocupaciones diarias con nuestro servicio de
-              lavandería y tintorería, asegurando que luzcas impecable durante
-              toda tu estancia.
-            </p>
-          </div>
-
-          <div className="card bg-white shadow-md rounded-2xl p-10">
-            <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-400 text-white mb-4">
-              <img
-                src={lavanderia}
-                alt="lavanderia"
-                className="w-6 h-6 flex items-center"
-              ></img>
-            </div>
-            <h2 className="font-bold text-2xl mb-2">Servicio de Lavandería</h2>
-            <p className="text-gray-600 text-base font-light">
-              Experimenta la frescura y limpieza incomparables. Utilizamos
-              tecnologías de vanguardia y productos de calidad para dejar tus
-              prendas como nuevas.
-            </p>
-          </div>
-
-          <div className="card bg-white shadow-md rounded-2xl p-10">
-            <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-400 text-white mb-4">
-              <img
-                src={reunion}
-                alt="reunion"
-                className="w-6 h-6 flex items-center"
-              ></img>
-            </div>
-            <h2 className="font-bold text-2xl mb-2">
-              Centro de Negocios y Salas de Reuniones
-            </h2>
-            <p className="text-gray-600 text-base font-light">
-              Con nuestro centro de negocios y salas de reuniones equipadas con
-              la última tecnología, ofrecemos el entorno perfecto para el éxito
-              de tus reuniones y eventos.
+          <div className="my-[66px] flex w-[25%] flex-col items-center">
+            <img src={Mission} alt="" />
+            <p>
+              Ofrecer estancias inigualables con atención meticulosa. Superar
+              expectativas con autenticidad y calidez.
             </p>
           </div>
         </div>
-      </div>
+        <h2 className="text-center text-[36px] font-bold">Nuestros logros</h2>
+        <div className="my-20 flex justify-around p-10">
+          <div className="h-[410px] w-[350px] bg-red-200">
+            <h2>Logro # ...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div className="h-[410px] w-[350px] bg-red-200">
+            <h2>Logro # ...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div className="h-[410px] w-[350px] bg-red-200">
+            <h2>Logro # ...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </section>
+      <WhatsappIcon />
+      <Footer />
     </>
   );
 }
