@@ -4,7 +4,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Contact from "./pages/Contact";
-import Index from "./pages/index";
+import Index from "./pages/Index";
 import AboutUs from "./pages/AboutUs";
 import Booking from "./pages/Booking";
 import Hotel from "./pages/Hotel";
