@@ -23,6 +23,7 @@ import HotelManagement from "./pages/HotelManagement";
 import Signup from "./pages/Signup";
 import AdministrarDuenos from "./pages/admin_users_hotels";
 import Filter from "./pages/filter/Filter";
+import Apitest from "./pages/Apitest";
 
 const router = createBrowserRouter([
   {
@@ -42,7 +43,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <Admin />,
+    element: <Apitest />,
   },
   {
     path: "/booking",
