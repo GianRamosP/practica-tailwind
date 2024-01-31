@@ -38,6 +38,9 @@ export default function Header() {
           <li className="hover:font-bold">
             <Link to="/whyus">Nosotros</Link>
           </li>
+          <li className="hover:font-bold">
+            <Link to="/admin">Administrar</Link>
+          </li>
         </ul>
       </nav>
 
